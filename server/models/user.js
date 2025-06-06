@@ -12,8 +12,9 @@ const userSchema = new mongoose.Schema({
 })
 
 userSchema.methods.generateAuthToken = function (){
-    const token = jet.sign({_id: this._id}, process.env.JWTPRIVATEKEY, {expiresln: return token
+    const token = jet.sign({_id: this._id}, process.env.JWTPRIVATEKEY, {expiresln: "5e"
     })
+    return token
 }
 
 const User = mongoose.model("user", userSchema)
