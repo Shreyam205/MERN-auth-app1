@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <h1>Fuck You</h1>
+    <h1>Hey There</h1>
     </>
   )
 }
